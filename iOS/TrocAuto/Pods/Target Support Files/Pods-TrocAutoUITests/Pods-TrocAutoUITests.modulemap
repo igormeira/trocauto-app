@@ -1,0 +1,6 @@
+framework module Pods_TrocAutoUITests {
+  umbrella header "Pods-TrocAutoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

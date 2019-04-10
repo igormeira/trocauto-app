@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04D891C3CA5DF7E6E9AB7215 /* Pods_TrocAutoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6496504D881DFD3448EA01D /* Pods_TrocAutoTests.framework */; };
+		221FBAFDB5A2EB23F1931A05 /* Pods_TrocAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642A15C320010BF27FE49C8D /* Pods_TrocAuto.framework */; };
+		3A1862FD2252A5CA005DD92C /* DoneExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1862FC2252A5CA005DD92C /* DoneExtension.swift */; };
+		3A7C7D8E2228C4D30056BB08 /* VehicleDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C7D8D2228C4D30056BB08 /* VehicleDAO.swift */; };
+		3A8B2E5722554CC9003AC664 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B2E5622554CC9003AC664 /* Alert.swift */; };
+		3A970435222705C800B05E37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A970434222705C800B05E37 /* AppDelegate.swift */; };
+		3A970437222705C800B05E37 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A970436222705C800B05E37 /* ChartViewController.swift */; };
+		3A970439222705C800B05E37 /* AutoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A970438222705C800B05E37 /* AutoListViewController.swift */; };
+		3A97043C222705C800B05E37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A97043A222705C800B05E37 /* Main.storyboard */; };
+		3A97043E222705CA00B05E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A97043D222705CA00B05E37 /* Assets.xcassets */; };
+		3A970441222705CA00B05E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A97043F222705CA00B05E37 /* LaunchScreen.storyboard */; };
+		3A97044C222705CA00B05E37 /* TrocAutoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A97044B222705CA00B05E37 /* TrocAutoTests.swift */; };
+		3A970457222705CA00B05E37 /* TrocAutoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A970456222705CA00B05E37 /* TrocAutoUITests.swift */; };
+		3AABA5262228373800A39E76 /* AutoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABA5252228373800A39E76 /* AutoListCell.swift */; };
+		3AABA5292228376700A39E76 /* AddAutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABA5282228376700A39E76 /* AddAutoViewController.swift */; };
+		3AABA52B2228463D00A39E76 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABA52A2228463D00A39E76 /* Vehicle.swift */; };
+		3AD085D8222734BD0090B68E /* TrocAuto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AD085D6222734BD0090B68E /* TrocAuto.xcdatamodeld */; };
+		3AD3F68D225B78490035F386 /* icons8-plus-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AD3F68A225B78490035F386 /* icons8-plus-60.png */; };
+		3AD3F68E225B78490035F386 /* icons8-checked-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AD3F68B225B78490035F386 /* icons8-checked-60.png */; };
+		3AD3F68F225B78490035F386 /* icons8-back-to-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AD3F68C225B78490035F386 /* icons8-back-to-60.png */; };
+		3AD3F694225B7CCD0035F386 /* icons8-chart-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AD3F692225B7CCD0035F386 /* icons8-chart-25.png */; };
+		3AD3F695225B7CCD0035F386 /* icons8-fiat-500-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AD3F693225B7CCD0035F386 /* icons8-fiat-500-25.png */; };
+		B20679BB69919E0F503A0DAF /* Pods_TrocAutoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF4EE5BC17F7755D6B59B87 /* Pods_TrocAutoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A970448222705CA00B05E37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A970429222705C800B05E37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A970430222705C800B05E37;
+			remoteInfo = TrocAuto;
+		};
+		3A970453222705CA00B05E37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A970429222705C800B05E37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A970430222705C800B05E37;
+			remoteInfo = TrocAuto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A1862FC2252A5CA005DD92C /* DoneExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneExtension.swift; sourceTree = "<group>"; };
+		3A7C7D8D2228C4D30056BB08 /* VehicleDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDAO.swift; sourceTree = "<group>"; };
+		3A8B2E5622554CC9003AC664 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		3A970431222705C800B05E37 /* TrocAuto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrocAuto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A970434222705C800B05E37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A970436222705C800B05E37 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		3A970438222705C800B05E37 /* AutoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoListViewController.swift; sourceTree = "<group>"; };
+		3A97043B222705C800B05E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A97043D222705CA00B05E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A970440222705CA00B05E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A970442222705CA00B05E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A970447222705CA00B05E37 /* TrocAutoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrocAutoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A97044B222705CA00B05E37 /* TrocAutoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrocAutoTests.swift; sourceTree = "<group>"; };
+		3A97044D222705CA00B05E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A970452222705CA00B05E37 /* TrocAutoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrocAutoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A970456222705CA00B05E37 /* TrocAutoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrocAutoUITests.swift; sourceTree = "<group>"; };
+		3A970458222705CA00B05E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AABA5252228373800A39E76 /* AutoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoListCell.swift; sourceTree = "<group>"; };
+		3AABA5282228376700A39E76 /* AddAutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAutoViewController.swift; sourceTree = "<group>"; };
+		3AABA52A2228463D00A39E76 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		3AD085D7222734BD0090B68E /* TrocAuto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrocAuto.xcdatamodel; sourceTree = "<group>"; };
+		3AD3F68A225B78490035F386 /* icons8-plus-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-plus-60.png"; sourceTree = "<group>"; };
+		3AD3F68B225B78490035F386 /* icons8-checked-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-checked-60.png"; sourceTree = "<group>"; };
+		3AD3F68C225B78490035F386 /* icons8-back-to-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-back-to-60.png"; sourceTree = "<group>"; };
+		3AD3F692225B7CCD0035F386 /* icons8-chart-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-chart-25.png"; sourceTree = "<group>"; };
+		3AD3F693225B7CCD0035F386 /* icons8-fiat-500-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-fiat-500-25.png"; sourceTree = "<group>"; };
+		4CF4EE5BC17F7755D6B59B87 /* Pods_TrocAutoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrocAutoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F6EDF16BBD4BDDCAA932926 /* Pods-TrocAutoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrocAutoTests.release.xcconfig"; path = "Target Support Files/Pods-TrocAutoTests/Pods-TrocAutoTests.release.xcconfig"; sourceTree = "<group>"; };
+		642A15C320010BF27FE49C8D /* Pods_TrocAuto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrocAuto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		790D4EC4BEBB838279F8B84A /* Pods-TrocAuto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrocAuto.release.xcconfig"; path = "Target Support Files/Pods-TrocAuto/Pods-TrocAuto.release.xcconfig"; sourceTree = "<group>"; };
+		B6496504D881DFD3448EA01D /* Pods_TrocAutoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrocAutoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AC4B204902ABAB495CC4A7 /* Pods-TrocAutoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrocAutoTests.debug.xcconfig"; path = "Target Support Files/Pods-TrocAutoTests/Pods-TrocAutoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9FFF9D8C140D493C05F21DC /* Pods-TrocAutoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrocAutoUITests.release.xcconfig"; path = "Target Support Files/Pods-TrocAutoUITests/Pods-TrocAutoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E3FD5E1EC4A0AD5C51525354 /* Pods-TrocAutoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrocAutoUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrocAutoUITests/Pods-TrocAutoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6EDAB8D6C3CE4063EA764C3 /* Pods-TrocAuto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrocAuto.debug.xcconfig"; path = "Target Support Files/Pods-TrocAuto/Pods-TrocAuto.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A97042E222705C800B05E37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221FBAFDB5A2EB23F1931A05 /* Pods_TrocAuto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A970444222705CA00B05E37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D891C3CA5DF7E6E9AB7215 /* Pods_TrocAutoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A97044F222705CA00B05E37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20679BB69919E0F503A0DAF /* Pods_TrocAutoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A1862FB2252A599005DD92C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3A1862FC2252A5CA005DD92C /* DoneExtension.swift */,
+				3A8B2E5622554CC9003AC664 /* Alert.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3A7C7D8C2228C3DA0056BB08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AABA5252228373800A39E76 /* AutoListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A970428222705C800B05E37 = {
+			isa = PBXGroup;
+			children = (
+				3A970433222705C800B05E37 /* TrocAuto */,
+				3A97044A222705CA00B05E37 /* TrocAutoTests */,
+				3A970455222705CA00B05E37 /* TrocAutoUITests */,
+				3A970432222705C800B05E37 /* Products */,
+				BA64880F823F8C4A5D43399F /* Pods */,
+				5B002258A34320F6D07BC1FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A970432222705C800B05E37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A970431222705C800B05E37 /* TrocAuto.app */,
+				3A970447222705CA00B05E37 /* TrocAutoTests.xctest */,
+				3A970452222705CA00B05E37 /* TrocAutoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A970433222705C800B05E37 /* TrocAuto */ = {
+			isa = PBXGroup;
+			children = (
+				3A97046722270B0000B05E37 /* AutoList */,
+				3A97046422270AE600B05E37 /* Charts */,
+				3A1862FB2252A599005DD92C /* Components */,
+				3AD3F689225B78270035F386 /* Assets */,
+				3A970434222705C800B05E37 /* AppDelegate.swift */,
+				3A97043A222705C800B05E37 /* Main.storyboard */,
+				3A97043D222705CA00B05E37 /* Assets.xcassets */,
+				3A97043F222705CA00B05E37 /* LaunchScreen.storyboard */,
+				3A970442222705CA00B05E37 /* Info.plist */,
+				3AD085D6222734BD0090B68E /* TrocAuto.xcdatamodeld */,
+			);
+			path = TrocAuto;
+			sourceTree = "<group>";
+		};
+		3A97044A222705CA00B05E37 /* TrocAutoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A97044B222705CA00B05E37 /* TrocAutoTests.swift */,
+				3A97044D222705CA00B05E37 /* Info.plist */,
+			);
+			path = TrocAutoTests;
+			sourceTree = "<group>";
+		};
+		3A970455222705CA00B05E37 /* TrocAutoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A970456222705CA00B05E37 /* TrocAutoUITests.swift */,
+				3A970458222705CA00B05E37 /* Info.plist */,
+			);
+			path = TrocAutoUITests;
+			sourceTree = "<group>";
+		};
+		3A97046422270AE600B05E37 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				3A97046622270AFA00B05E37 /* Model */,
+				3A97046522270AF300B05E37 /* Controller */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		3A97046522270AF300B05E37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A970436222705C800B05E37 /* ChartViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A97046622270AFA00B05E37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A97046722270B0000B05E37 /* AutoList */ = {
+			isa = PBXGroup;
+			children = (
+				3A97046A22270B2E00B05E37 /* Model */,
+				3A7C7D8C2228C3DA0056BB08 /* View */,
+				3A97046822270B2100B05E37 /* Controller */,
+			);
+			path = AutoList;
+			sourceTree = "<group>";
+		};
+		3A97046822270B2100B05E37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A970438222705C800B05E37 /* AutoListViewController.swift */,
+				3AABA5282228376700A39E76 /* AddAutoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A97046A22270B2E00B05E37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AABA52A2228463D00A39E76 /* Vehicle.swift */,
+				3A7C7D8D2228C4D30056BB08 /* VehicleDAO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AD3F689225B78270035F386 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3AD3F690225B78500035F386 /* Icons */,
+				3AD3F691225B7BF00035F386 /* TabBar */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3AD3F690225B78500035F386 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				3AD3F68C225B78490035F386 /* icons8-back-to-60.png */,
+				3AD3F68B225B78490035F386 /* icons8-checked-60.png */,
+				3AD3F68A225B78490035F386 /* icons8-plus-60.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		3AD3F691225B7BF00035F386 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3AD3F692225B7CCD0035F386 /* icons8-chart-25.png */,
+				3AD3F693225B7CCD0035F386 /* icons8-fiat-500-25.png */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		5B002258A34320F6D07BC1FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				642A15C320010BF27FE49C8D /* Pods_TrocAuto.framework */,
+				B6496504D881DFD3448EA01D /* Pods_TrocAutoTests.framework */,
+				4CF4EE5BC17F7755D6B59B87 /* Pods_TrocAutoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA64880F823F8C4A5D43399F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6EDAB8D6C3CE4063EA764C3 /* Pods-TrocAuto.debug.xcconfig */,
+				790D4EC4BEBB838279F8B84A /* Pods-TrocAuto.release.xcconfig */,
+				B6AC4B204902ABAB495CC4A7 /* Pods-TrocAutoTests.debug.xcconfig */,
+				4F6EDF16BBD4BDDCAA932926 /* Pods-TrocAutoTests.release.xcconfig */,
+				E3FD5E1EC4A0AD5C51525354 /* Pods-TrocAutoUITests.debug.xcconfig */,
+				C9FFF9D8C140D493C05F21DC /* Pods-TrocAutoUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A970430222705C800B05E37 /* TrocAuto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A97045B222705CA00B05E37 /* Build configuration list for PBXNativeTarget "TrocAuto" */;
+			buildPhases = (
+				0EA5661A4867FBD03BE1D68B /* [CP] Check Pods Manifest.lock */,
+				3A97042D222705C800B05E37 /* Sources */,
+				3A97042E222705C800B05E37 /* Frameworks */,
+				3A97042F222705C800B05E37 /* Resources */,
+				594AA49FA2BDAB5B4DE63736 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrocAuto;
+			productName = TrocAuto;
+			productReference = 3A970431222705C800B05E37 /* TrocAuto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A970446222705CA00B05E37 /* TrocAutoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A97045E222705CA00B05E37 /* Build configuration list for PBXNativeTarget "TrocAutoTests" */;
+			buildPhases = (
+				EC6D451B7AFDDFAC913EEEAD /* [CP] Check Pods Manifest.lock */,
+				3A970443222705CA00B05E37 /* Sources */,
+				3A970444222705CA00B05E37 /* Frameworks */,
+				3A970445222705CA00B05E37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A970449222705CA00B05E37 /* PBXTargetDependency */,
+			);
+			name = TrocAutoTests;
+			productName = TrocAutoTests;
+			productReference = 3A970447222705CA00B05E37 /* TrocAutoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A970451222705CA00B05E37 /* TrocAutoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A970461222705CA00B05E37 /* Build configuration list for PBXNativeTarget "TrocAutoUITests" */;
+			buildPhases = (
+				308916345055716E975750D7 /* [CP] Check Pods Manifest.lock */,
+				3A97044E222705CA00B05E37 /* Sources */,
+				3A97044F222705CA00B05E37 /* Frameworks */,
+				3A970450222705CA00B05E37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A970454222705CA00B05E37 /* PBXTargetDependency */,
+			);
+			name = TrocAutoUITests;
+			productName = TrocAutoUITests;
+			productReference = 3A970452222705CA00B05E37 /* TrocAutoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A970429222705C800B05E37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Igor Meira";
+				TargetAttributes = {
+					3A970430222705C800B05E37 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+					3A970446222705CA00B05E37 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 3A970430222705C800B05E37;
+					};
+					3A970451222705CA00B05E37 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 3A970430222705C800B05E37;
+					};
+				};
+			};
+			buildConfigurationList = 3A97042C222705C800B05E37 /* Build configuration list for PBXProject "TrocAuto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A970428222705C800B05E37;
+			productRefGroup = 3A970432222705C800B05E37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A970430222705C800B05E37 /* TrocAuto */,
+				3A970446222705CA00B05E37 /* TrocAutoTests */,
+				3A970451222705CA00B05E37 /* TrocAutoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A97042F222705C800B05E37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD3F68E225B78490035F386 /* icons8-checked-60.png in Resources */,
+				3AD3F68F225B78490035F386 /* icons8-back-to-60.png in Resources */,
+				3A970441222705CA00B05E37 /* LaunchScreen.storyboard in Resources */,
+				3AD3F694225B7CCD0035F386 /* icons8-chart-25.png in Resources */,
+				3AD3F695225B7CCD0035F386 /* icons8-fiat-500-25.png in Resources */,
+				3AD3F68D225B78490035F386 /* icons8-plus-60.png in Resources */,
+				3A97043E222705CA00B05E37 /* Assets.xcassets in Resources */,
+				3A97043C222705C800B05E37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A970445222705CA00B05E37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A970450222705CA00B05E37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA5661A4867FBD03BE1D68B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrocAuto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		308916345055716E975750D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrocAutoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		594AA49FA2BDAB5B4DE63736 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrocAuto/Pods-TrocAuto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrocAuto/Pods-TrocAuto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC6D451B7AFDDFAC913EEEAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrocAutoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A97042D222705C800B05E37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A970439222705C800B05E37 /* AutoListViewController.swift in Sources */,
+				3AABA5292228376700A39E76 /* AddAutoViewController.swift in Sources */,
+				3A970435222705C800B05E37 /* AppDelegate.swift in Sources */,
+				3A1862FD2252A5CA005DD92C /* DoneExtension.swift in Sources */,
+				3AD085D8222734BD0090B68E /* TrocAuto.xcdatamodeld in Sources */,
+				3AABA52B2228463D00A39E76 /* Vehicle.swift in Sources */,
+				3A8B2E5722554CC9003AC664 /* Alert.swift in Sources */,
+				3AABA5262228373800A39E76 /* AutoListCell.swift in Sources */,
+				3A970437222705C800B05E37 /* ChartViewController.swift in Sources */,
+				3A7C7D8E2228C4D30056BB08 /* VehicleDAO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A970443222705CA00B05E37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A97044C222705CA00B05E37 /* TrocAutoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A97044E222705CA00B05E37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A970457222705CA00B05E37 /* TrocAutoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A970449222705CA00B05E37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A970430222705C800B05E37 /* TrocAuto */;
+			targetProxy = 3A970448222705CA00B05E37 /* PBXContainerItemProxy */;
+		};
+		3A970454222705CA00B05E37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A970430222705C800B05E37 /* TrocAuto */;
+			targetProxy = 3A970453222705CA00B05E37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A97043A222705C800B05E37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A97043B222705C800B05E37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A97043F222705CA00B05E37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A970440222705CA00B05E37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A970459222705CA00B05E37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A97045A222705CA00B05E37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A97045C222705CA00B05E37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6EDAB8D6C3CE4063EA764C3 /* Pods-TrocAuto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR8XKY8WGM;
+				INFOPLIST_FILE = TrocAuto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.igormeira.TrocAuto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A97045D222705CA00B05E37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 790D4EC4BEBB838279F8B84A /* Pods-TrocAuto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR8XKY8WGM;
+				INFOPLIST_FILE = TrocAuto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.igormeira.TrocAuto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A97045F222705CA00B05E37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6AC4B204902ABAB495CC4A7 /* Pods-TrocAutoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR8XKY8WGM;
+				INFOPLIST_FILE = TrocAutoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.igormeira.TrocAutoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrocAuto.app/TrocAuto";
+			};
+			name = Debug;
+		};
+		3A970460222705CA00B05E37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F6EDF16BBD4BDDCAA932926 /* Pods-TrocAutoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR8XKY8WGM;
+				INFOPLIST_FILE = TrocAutoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.igormeira.TrocAutoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrocAuto.app/TrocAuto";
+			};
+			name = Release;
+		};
+		3A970462222705CA00B05E37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3FD5E1EC4A0AD5C51525354 /* Pods-TrocAutoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR8XKY8WGM;
+				INFOPLIST_FILE = TrocAutoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.igormeira.TrocAutoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrocAuto;
+			};
+			name = Debug;
+		};
+		3A970463222705CA00B05E37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9FFF9D8C140D493C05F21DC /* Pods-TrocAutoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR8XKY8WGM;
+				INFOPLIST_FILE = TrocAutoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.igormeira.TrocAutoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrocAuto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A97042C222705C800B05E37 /* Build configuration list for PBXProject "TrocAuto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A970459222705CA00B05E37 /* Debug */,
+				3A97045A222705CA00B05E37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A97045B222705CA00B05E37 /* Build configuration list for PBXNativeTarget "TrocAuto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A97045C222705CA00B05E37 /* Debug */,
+				3A97045D222705CA00B05E37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A97045E222705CA00B05E37 /* Build configuration list for PBXNativeTarget "TrocAutoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A97045F222705CA00B05E37 /* Debug */,
+				3A970460222705CA00B05E37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A970461222705CA00B05E37 /* Build configuration list for PBXNativeTarget "TrocAutoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A970462222705CA00B05E37 /* Debug */,
+				3A970463222705CA00B05E37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3AD085D6222734BD0090B68E /* TrocAuto.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3AD085D7222734BD0090B68E /* TrocAuto.xcdatamodel */,
+			);
+			currentVersion = 3AD085D7222734BD0090B68E /* TrocAuto.xcdatamodel */;
+			path = TrocAuto.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A970429222705C800B05E37 /* Project object */;
+}
