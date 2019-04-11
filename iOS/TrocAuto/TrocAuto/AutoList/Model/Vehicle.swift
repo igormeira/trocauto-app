@@ -85,11 +85,12 @@ class Vehicle: NSObject {
             while i <= months {
                 km += kmMonth
                 if km >= kmReview {
-                    cost = (baseCost + reviewPrice)
+                    cost = (costs.count > 0) ? ((baseCost + reviewPrice) + costs.last!) : (baseCost + reviewPrice)
                     costs.append((cost*100).rounded()/100)
                 }
                 else {
-                    costs.append(baseCost)
+                    cost = (costs.count > 0) ? (baseCost + costs.last!) : baseCost
+                    costs.append(cost)
                 }
                 i = i + 1
             }
@@ -100,11 +101,12 @@ class Vehicle: NSObject {
                 toReview += 1.0
                 if toReview == timeReview {
                     toReview = 0.0
-                    cost = (baseCost + reviewPrice)
+                    cost = (costs.count > 0) ? ((baseCost + reviewPrice) + costs.last!) : (baseCost + reviewPrice)
                     costs.append((cost*100).rounded()/100)
                 }
                 else {
-                    costs.append(baseCost)
+                    cost = (costs.count > 0) ? (baseCost + costs.last!) : baseCost
+                    costs.append(cost)
                 }
                 i = i + 1
             }
@@ -122,7 +124,7 @@ class Vehicle: NSObject {
     }
     
     func details() -> String {
-        let message = "Gasto base mensal: R$\(calculateTotalBaseCost()) \n Tipo de revisão: \(reviewType)"
+        let message = "Valor de entrada: R$\(initPrice) \n Gasto em \(months) meses: R$\(calculateTotalBaseCost()) \n Gasto mensal: R$\(calculateMonthlyCost()) \n Revisão: R$\(reviewPrice) \n Tipo de revisão: \(reviewType)"
         return message
     }
 }

@@ -15,17 +15,24 @@ class ChartViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet weak var fieldAuto1: UITextField!
     @IBOutlet weak var fieldAuto2: UITextField!
     @IBOutlet weak var lineChartView: LineChartView!
+    @IBOutlet weak var slider: UISlider!
+    
+    // MARK: - Final Attributes
+    let COLOR_PURPLE = NSUIColor.purple
+    let COLOR_GREEN = NSUIColor.green
     
     // MARK: - Variables
     var autoPicker1 = UIPickerView()
     var autoPicker2 = UIPickerView()
     var listAuto : Array<Vehicle> = []
+    var maxMonths : Int = 0
     
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        maxMonths = Int(slider.value)
         setChartValues()
         
         listAuto = VehicleDAO().getVehiclesAndAutos().vehicles
@@ -71,6 +78,13 @@ class ChartViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         setChartValues()
     }
     
+    //MARK: - Slider
+    
+    @IBAction func sliderValueChanged(_ sender: UISlider) {
+        maxMonths = Int(sender.value)
+        setChartValues()
+    }
+    
     //MARK: - Functions
     
     func reload() {
@@ -78,26 +92,43 @@ class ChartViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     func setChartValues() {
-        if let v1 = fieldAuto1.text {
-            guard let vehicle1 = VehicleDAO().getVehicleByName(v1) else {return}
-            let mc = vehicle1.calculateMonthlyCost()
-            let listMC = vehicle1.calculateAllMonthsCost(baseCost: mc)
-            let values = (1..<7).map {(i) -> ChartDataEntry in
-                let val = listMC[i-1]
-                return ChartDataEntry(x: Double(i), y: val)
-            }
-            let set1 = LineChartDataSet(values: values, label: vehicle1.name)
-            set1.colors = [NSUIColor.purple]
-            set1.circleColors = [NSUIColor.purple]
-            let data = LineChartData(dataSet: set1)
-            
-            self.lineChartView.data = data
-            
-            self.lineChartView.chartDescription?.text = "Dados em R$"
-            
-        } else {
-            self.lineChartView.chartDescription?.text = "Dados insulficientes!"
+        var dataSets : Array<IChartDataSet> = []
+        guard let v1 = fieldAuto1.text else {return}
+        guard let v2 = fieldAuto2.text else {return}
+        
+        if let vehicle1 = VehicleDAO().getVehicleByName(v1) {
+            slider.maximumValue = (Int(vehicle1.months) > Int(slider.maximumValue)) ? Float(vehicle1.months) : slider.maximumValue
+            let set1 = getVehicleData(vehicle1, COLOR_PURPLE)
+            dataSets.append(set1)
         }
+        if let vehicle2 = VehicleDAO().getVehicleByName(v2) {
+            slider.maximumValue = (Int(vehicle2.months) > Int(slider.maximumValue)) ? Float(vehicle2.months) : slider.maximumValue
+            let set2 = getVehicleData(vehicle2, COLOR_GREEN)
+            dataSets.append(set2)
+        }
+        
+        let data = LineChartData.init(dataSets: dataSets)
+        
+        self.lineChartView.data = data
+        
+        self.lineChartView.chartDescription?.text = (dataSets.count > 0) ? "Dados em R$" : "Escolha um veículo"
+        
+    }
+    
+    func getVehicleData(_ vehicle : Vehicle, _ color : NSUIColor) -> LineChartDataSet {
+        let mc = vehicle.calculateMonthlyCost()
+        let listMC = vehicle.calculateAllMonthsCost(baseCost: mc)
+        let max = (Int(vehicle.months) >= maxMonths) ? maxMonths : Int(vehicle.months)
+        
+        let values = (1..<max+1).map {(i) -> ChartDataEntry in
+            let val = listMC[i-1]
+            return ChartDataEntry(x: Double(i), y: val)
+        }
+        let set = LineChartDataSet(values: values, label: vehicle.name)
+        set.colors = [color]
+        set.circleColors = [color]
+        
+        return set
     }
     
 }

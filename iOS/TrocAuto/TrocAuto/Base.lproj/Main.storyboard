@@ -88,21 +88,30 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9d-YN-go6" userLabel="Chart View" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="8" y="163" width="304" height="356"/>
+                                <rect key="frame" x="8" y="163" width="304" height="318"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="12" minValue="0.0" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="5Jx-Pl-sgc">
+                                <rect key="frame" x="6" y="481" width="308" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="w5s-Il-7lD"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aDf-hF-lfA" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="2TE-19-5Wc"/>
+                            <constraint firstItem="5Jx-Pl-sgc" firstAttribute="top" secondItem="T9d-YN-go6" secondAttribute="bottom" id="322-V7-L82"/>
                             <constraint firstItem="T9d-YN-go6" firstAttribute="top" secondItem="zKc-XK-PsW" secondAttribute="bottom" id="5K4-lF-wcD"/>
                             <constraint firstAttribute="trailing" secondItem="zKc-XK-PsW" secondAttribute="trailing" constant="8" id="DUn-1N-nOS"/>
+                            <constraint firstItem="5Jx-Pl-sgc" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" constant="-8" id="IcV-3U-Ss9"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="aDf-hF-lfA" secondAttribute="trailing" id="Wfk-Bw-g0v"/>
                             <constraint firstItem="T9d-YN-go6" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="8" id="ZDO-wF-9s9"/>
                             <constraint firstItem="aDf-hF-lfA" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="asg-Qr-Qch"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="T9d-YN-go6" secondAttribute="bottom" id="gfG-bg-NdI"/>
                             <constraint firstItem="zKc-XK-PsW" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="8" id="jVM-aA-XY8"/>
+                            <constraint firstItem="5Jx-Pl-sgc" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="8" id="lZI-Of-SSJ"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="T9d-YN-go6" secondAttribute="trailing" constant="8" id="mLv-Aa-eUE"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="5Jx-Pl-sgc" secondAttribute="trailing" constant="8" id="rli-PD-2Lr"/>
                             <constraint firstItem="zKc-XK-PsW" firstAttribute="top" secondItem="aDf-hF-lfA" secondAttribute="bottom" constant="8" id="vXp-aV-9dT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
@@ -112,6 +121,7 @@
                         <outlet property="fieldAuto1" destination="Zde-Wv-OE8" id="qPt-EC-6XL"/>
                         <outlet property="fieldAuto2" destination="caJ-3A-UMX" id="GDh-59-BZs"/>
                         <outlet property="lineChartView" destination="T9d-YN-go6" id="8NB-Mu-Wnn"/>
+                        <outlet property="slider" destination="5Jx-Pl-sgc" id="6Jl-rS-MnV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
