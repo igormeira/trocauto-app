@@ -73,9 +73,6 @@ class VehicleDAO: NSObject {
     }
     
     func updateAuto(name: String, dictionaryVehicle:Dictionary<String, Any>) {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Auto")
         request.predicate = NSPredicate(format: "name = %@", name)
         request.returnsObjectsAsFaults = false

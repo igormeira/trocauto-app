@@ -31,6 +31,7 @@ class ChartViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.barStyle = .black
         
         maxMonths = Int(slider.value)
         setChartValues()
@@ -53,6 +54,10 @@ class ChartViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     override func viewWillAppear(_ animated: Bool) {
         reload()
         setChartValues()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
     //MARK: - Picker

@@ -33,8 +33,14 @@ class AddAutoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.barStyle = .black
+        
         segReviewType.addTarget(self, action: #selector(changeReviewType(_:)), for: .valueChanged)
         fillFields()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     //MARK: - Functions
