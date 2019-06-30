@@ -123,8 +123,14 @@ class Vehicle: NSObject {
         }
     }
     
+    func changeCommaToDot (_ double : Double) -> String {
+        var doubleStr = String(format:"%.2f", double)
+        doubleStr = doubleStr.replacingOccurrences(of: ".", with: ",")
+        return doubleStr
+    }
+    
     func details() -> String {
-        let message = "Valor de entrada: R$\(initPrice) \n Gasto em \(months) meses: R$\(calculateTotalBaseCost()) \n Gasto mensal: R$\(calculateMonthlyCost()) \n Revisão: R$\(reviewPrice) \n Tipo de revisão: \(reviewType)"
+        let message = "Valor de entrada: R$\(changeCommaToDot(initPrice)) \n Gasto em \(months) meses: R$\(changeCommaToDot(calculateTotalBaseCost())) \n Gasto mensal: R$\(changeCommaToDot(calculateMonthlyCost())) \n Revisão: R$\(changeCommaToDot(reviewPrice)) \n Tipo de revisão: \(reviewType)"
         return message
     }
 }

@@ -36,6 +36,17 @@ class AddAutoViewController: UIViewController {
         navigationController?.navigationBar.barStyle = .black
         
         segReviewType.addTarget(self, action: #selector(changeReviewType(_:)), for: .valueChanged)
+        
+        fieldName.inputAccessoryView = setToolBar(self)
+        fieldMonths.inputAccessoryView = setToolBar(self)
+        fieldInitValue.inputAccessoryView = setToolBar(self)
+        fieldFuelPrice.inputAccessoryView = setToolBar(self)
+        fieldConsumption.inputAccessoryView = setToolBar(self)
+        fieldKmMonths.inputAccessoryView = setToolBar(self)
+        fieldTimeReview.inputAccessoryView = setToolBar(self)
+        fieldKmReview.inputAccessoryView = setToolBar(self)
+        fieldReviewPrice.inputAccessoryView = setToolBar(self)
+        
         fillFields()
     }
     
@@ -46,15 +57,20 @@ class AddAutoViewController: UIViewController {
     //MARK: - Functions
     
     func isValid() -> Bool {
-        guard let _ = fieldName.text else {return false}
-        guard let _ = fieldMonths.text else {return false}
-        guard let _ = fieldInitValue.text else {return false}
-        guard let _ = fieldFuelPrice.text else {return false}
-        guard let _ = fieldConsumption.text else {return false}
-        guard let _ = fieldKmMonths.text else {return false}
-        guard let _ = fieldTimeReview.text else {return false}
-        guard let _ = fieldKmReview.text else {return false}
-        guard let _ = fieldReviewPrice.text else {return false}
+        guard let name = fieldName.text else {return false}
+        guard let months = fieldMonths.text else {return false}
+        guard let initValue = fieldInitValue.text else {return false}
+        guard let fuelPrice = fieldFuelPrice.text else {return false}
+        guard let consumption = fieldConsumption.text else {return false}
+        guard let kmMonths = fieldKmMonths.text else {return false}
+        guard let timeReview = fieldTimeReview.text else {return false}
+        guard let kmReview = fieldKmReview.text else {return false}
+        guard let reviewPrice = fieldReviewPrice.text else {return false}
+        
+        if (name == "") || (months == "") || (initValue == "") || (fuelPrice == "") || (consumption == "") || (kmMonths == "") || (timeReview == "") || (kmReview == "") || (reviewPrice == "") {
+            return false
+        }
+        
         return true
     }
     
@@ -63,14 +79,14 @@ class AddAutoViewController: UIViewController {
             viewTitle.text = "EDITAR VEÍCULO"
             
             fieldName.text = sAuto.name
-            fieldMonths.text = String(sAuto.months)
-            fieldInitValue.text = String(sAuto.initPrice)
-            fieldFuelPrice.text = String(sAuto.fuelPrice)
-            fieldConsumption.text = String(sAuto.consumption)
-            fieldKmMonths.text = String(sAuto.kmMonth)
-            fieldTimeReview.text = String(sAuto.timeReview)
-            fieldKmReview.text = String(sAuto.kmReview)
-            fieldReviewPrice.text = String(sAuto.reviewPrice)
+            fieldMonths.text = String(sAuto.months).replacingOccurrences(of: ".", with: ",")
+            fieldInitValue.text = String(sAuto.initPrice).replacingOccurrences(of: ".", with: ",")
+            fieldFuelPrice.text = String(sAuto.fuelPrice).replacingOccurrences(of: ".", with: ",")
+            fieldConsumption.text = String(sAuto.consumption).replacingOccurrences(of: ".", with: ",")
+            fieldKmMonths.text = String(sAuto.kmMonth).replacingOccurrences(of: ".", with: ",")
+            fieldTimeReview.text = String(sAuto.timeReview).replacingOccurrences(of: ".", with: ",")
+            fieldKmReview.text = String(sAuto.kmReview).replacingOccurrences(of: ".", with: ",")
+            fieldReviewPrice.text = String(sAuto.reviewPrice).replacingOccurrences(of: ".", with: ",")
             if sAuto.reviewType == "Por Mês" {
                 segmentIndex = 0
             } else {
@@ -80,6 +96,11 @@ class AddAutoViewController: UIViewController {
         } else {
             viewTitle.text = "ADICIONAR VEÍCULO"
         }
+    }
+    
+    func changeCommaToDot (_ str : UITextField) -> String {
+        guard let responseStr = str.text else { return "0.0" }
+        return responseStr.replacingOccurrences(of: ",", with: ".")
     }
     
     //MARK: - Actions
@@ -101,16 +122,19 @@ class AddAutoViewController: UIViewController {
     
     @IBAction func save(_ sender: Any) {
         if isValid() {
+            guard let name = fieldName.text else { return }
+            guard let months = fieldMonths.text else { return }
+            
             let dictionaryAuto : Dictionary<String, Any> = [
-                "name" : fieldName.text!,
-                "months" : Int32(fieldMonths.text!)!,
-                "initial_price" : Double(fieldInitValue.text!)!,
-                "fuel_price" : Double(fieldFuelPrice.text!)!,
-                "consumption" : Double(fieldConsumption.text!)!,
-                "km_months" : Double(fieldKmMonths.text!)!,
-                "time_review" : Double(fieldTimeReview.text!)!,
-                "km_review" : Double(fieldKmReview.text!)!,
-                "price_review" : Double(fieldReviewPrice.text!)!,
+                "name" : name,
+                "months" : Int32(months) ?? 0,
+                "initial_price" : Double(changeCommaToDot(fieldInitValue)) ?? 0.0,
+                "fuel_price" : Double(changeCommaToDot(fieldFuelPrice)) ?? 0.0,
+                "consumption" : Double(changeCommaToDot(fieldConsumption)) ?? 0.0,
+                "km_months" : Double(changeCommaToDot(fieldKmMonths)) ?? 0.0,
+                "time_review" : Double(changeCommaToDot(fieldTimeReview)) ?? 0.0,
+                "km_review" : Double(changeCommaToDot(fieldKmReview)) ?? 0.0,
+                "price_review" : Double(changeCommaToDot(fieldReviewPrice)) ?? 0.0,
                 "review_type" : segReviewType.titleForSegment(at: segReviewType.selectedSegmentIndex)!
             ]
             if let sAuto = selectedAuto {
@@ -121,6 +145,9 @@ class AddAutoViewController: UIViewController {
             if let navigation = navigationController {
                 navigation.popViewController(animated: true)
             }
+        }
+        else {
+            Alert(controller : self).showDetails("Atenção", message: "Preencha todos os campos!")
         }
     }
 }

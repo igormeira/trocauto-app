@@ -16,9 +16,15 @@ class AutoListCell: UITableViewCell {
     
     func configAutoCell(auto:Vehicle) {
         let mc = auto.calculateMonthlyCost()
+        var mcStr = String(format:"%.2f", mc)
+        mcStr = mcStr.replacingOccurrences(of: ".", with: ",")
+        
+        var fuelStr = String(format:"%.2f", auto.fuelPrice)
+        fuelStr = fuelStr.replacingOccurrences(of: ".", with: ",")
+        
         labelName.text = auto.name
-        labelMC.text = "Custo mensal: R$ \(mc)"
-        labelFuel.text = "Preço do combustível: R$ \(auto.fuelPrice)"
+        labelMC.text = "Custo mensal: R$ \(mcStr)"
+        labelFuel.text = "Preço do combustível: R$ \(fuelStr)"
     }
 
 }
