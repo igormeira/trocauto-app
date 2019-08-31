@@ -45,7 +45,7 @@ class VehicleDAO: NSObject {
         
         for auto in listAuto {
             guard let rt = auto.review_type else {return vehicles}
-            let vehicle = Vehicle(name: auto.name!, months: auto.months, initPrice: auto.initial_price, fuelPrice: auto.fuel_price, consumption: auto.consumption, kmMonth: auto.km_months, timeReview: auto.time_review, kmReview: auto.km_review, reviewPrice: auto.price_review, reviewType: rt)
+            let vehicle = Vehicle(name: auto.name!, months: auto.months, initPrice: auto.initial_price, fuelPrice: auto.fuel_price, consumption: auto.consumption, kmMonth: auto.km_months, timeReview: auto.time_review, kmReview: auto.km_review, reviewPrice: auto.price_review, reviewType: rt, ipva: auto.ipva, insurance: auto.insurance)
             vehicles.append(vehicle)
         }
         
@@ -68,6 +68,8 @@ class VehicleDAO: NSObject {
         auto?.setValue(dictionaryVehicle["km_review"], forKey: "km_review")
         auto?.setValue(dictionaryVehicle["price_review"], forKey: "price_review")
         auto?.setValue(dictionaryVehicle["review_type"] as? String, forKey: "review_type")
+        auto?.setValue(dictionaryVehicle["ipva"], forKey: "ipva")
+        auto?.setValue(dictionaryVehicle["insurance"], forKey: "insurance")
         
         updateContext()
     }
@@ -91,6 +93,8 @@ class VehicleDAO: NSObject {
                 auto.setValue(dictionaryVehicle["km_review"], forKey: "km_review")
                 auto.setValue(dictionaryVehicle["price_review"], forKey: "price_review")
                 auto.setValue(dictionaryVehicle["review_type"] as? String, forKey: "review_type")
+                auto.setValue(dictionaryVehicle["ipva"], forKey: "ipva")
+                auto.setValue(dictionaryVehicle["insurance"], forKey: "insurance")
                 
                 updateContext()
             }

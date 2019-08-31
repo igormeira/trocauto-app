@@ -9,7 +9,11 @@
 /* Begin PBXBuildFile section */
 		04D891C3CA5DF7E6E9AB7215 /* Pods_TrocAutoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6496504D881DFD3448EA01D /* Pods_TrocAutoTests.framework */; };
 		221FBAFDB5A2EB23F1931A05 /* Pods_TrocAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642A15C320010BF27FE49C8D /* Pods_TrocAuto.framework */; };
-		3A1862FD2252A5CA005DD92C /* DoneExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1862FC2252A5CA005DD92C /* DoneExtension.swift */; };
+		3A0A578422EB939F0017F172 /* CompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A578322EB939F0017F172 /* CompareViewController.swift */; };
+		3A0AC0FC22EE5765000B231C /* CurrencyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AC0FB22EE5765000B231C /* CurrencyExtension.swift */; };
+		3A0AC0FE22EE717B000B231C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AC0FD22EE717B000B231C /* StringExtension.swift */; };
+		3A1862FD2252A5CA005DD92C /* KeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1862FC2252A5CA005DD92C /* KeyboardExtension.swift */; };
+		3A6012F622EDF46C00231742 /* Background-launch-title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A6012F522EDF46C00231742 /* Background-launch-title.jpg */; };
 		3A7C7D8E2228C4D30056BB08 /* VehicleDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C7D8D2228C4D30056BB08 /* VehicleDAO.swift */; };
 		3A8B2E5722554CC9003AC664 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B2E5622554CC9003AC664 /* Alert.swift */; };
 		3A970435222705C800B05E37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A970434222705C800B05E37 /* AppDelegate.swift */; };
@@ -20,6 +24,14 @@
 		3A970441222705CA00B05E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A97043F222705CA00B05E37 /* LaunchScreen.storyboard */; };
 		3A97044C222705CA00B05E37 /* TrocAutoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A97044B222705CA00B05E37 /* TrocAutoTests.swift */; };
 		3A970457222705CA00B05E37 /* TrocAutoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A970456222705CA00B05E37 /* TrocAutoUITests.swift */; };
+		3A98A66722EC96D800241AB3 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A98A66622EC96D800241AB3 /* Help.swift */; };
+		3A98A66922ECB05300241AB3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A98A66822ECB05300241AB3 /* UIColorExtension.swift */; };
+		3A98A66C22ED350C00241AB3 /* Trocauto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A98A66B22ED350C00241AB3 /* Trocauto.jpg */; };
+		3A98A67622ED37C000241AB3 /* vehicles.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A98A67322ED37C000241AB3 /* vehicles.png */; };
+		3A98A67722ED37C000241AB3 /* 1x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A98A67422ED37C000241AB3 /* 1x1.png */; };
+		3A98A67822ED37C000241AB3 /* chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A98A67522ED37C000241AB3 /* chart.png */; };
+		3A98A67A22ED391100241AB3 /* Background-launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A98A67922ED391100241AB3 /* Background-launch.jpg */; };
+		3A98A68022ED3D6C00241AB3 /* BlackOpsOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A98A67F22ED3BA200241AB3 /* BlackOpsOne-Regular.ttf */; };
 		3AABA5262228373800A39E76 /* AutoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABA5252228373800A39E76 /* AutoListCell.swift */; };
 		3AABA5292228376700A39E76 /* AddAutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABA5282228376700A39E76 /* AddAutoViewController.swift */; };
 		3AABA52B2228463D00A39E76 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABA52A2228463D00A39E76 /* Vehicle.swift */; };
@@ -50,7 +62,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A1862FC2252A5CA005DD92C /* DoneExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneExtension.swift; sourceTree = "<group>"; };
+		3A0A578322EB939F0017F172 /* CompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareViewController.swift; sourceTree = "<group>"; };
+		3A0AC0FB22EE5765000B231C /* CurrencyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExtension.swift; sourceTree = "<group>"; };
+		3A0AC0FD22EE717B000B231C /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		3A1862FC2252A5CA005DD92C /* KeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExtension.swift; sourceTree = "<group>"; };
+		3A6012F522EDF46C00231742 /* Background-launch-title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Background-launch-title.jpg"; sourceTree = "<group>"; };
 		3A7C7D8D2228C4D30056BB08 /* VehicleDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDAO.swift; sourceTree = "<group>"; };
 		3A8B2E5622554CC9003AC664 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		3A970431222705C800B05E37 /* TrocAuto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrocAuto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +83,15 @@
 		3A970452222705CA00B05E37 /* TrocAutoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrocAutoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A970456222705CA00B05E37 /* TrocAutoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrocAutoUITests.swift; sourceTree = "<group>"; };
 		3A970458222705CA00B05E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A98A66522EC8AB400241AB3 /* TrocAuto v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TrocAuto v2.xcdatamodel"; sourceTree = "<group>"; };
+		3A98A66622EC96D800241AB3 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		3A98A66822ECB05300241AB3 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		3A98A66B22ED350C00241AB3 /* Trocauto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Trocauto.jpg; sourceTree = "<group>"; };
+		3A98A67322ED37C000241AB3 /* vehicles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vehicles.png; sourceTree = "<group>"; };
+		3A98A67422ED37C000241AB3 /* 1x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1x1.png; sourceTree = "<group>"; };
+		3A98A67522ED37C000241AB3 /* chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chart.png; sourceTree = "<group>"; };
+		3A98A67922ED391100241AB3 /* Background-launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Background-launch.jpg"; sourceTree = "<group>"; };
+		3A98A67F22ED3BA200241AB3 /* BlackOpsOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BlackOpsOne-Regular.ttf"; sourceTree = "<group>"; };
 		3AABA5252228373800A39E76 /* AutoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoListCell.swift; sourceTree = "<group>"; };
 		3AABA5282228376700A39E76 /* AddAutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAutoViewController.swift; sourceTree = "<group>"; };
 		3AABA52A2228463D00A39E76 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
@@ -115,11 +140,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A0A578122EB93310017F172 /* Compare */ = {
+			isa = PBXGroup;
+			children = (
+				3A0A578222EB936A0017F172 /* Controller */,
+			);
+			path = Compare;
+			sourceTree = "<group>";
+		};
+		3A0A578222EB936A0017F172 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A0A578322EB939F0017F172 /* CompareViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		3A1862FB2252A599005DD92C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				3A1862FC2252A5CA005DD92C /* DoneExtension.swift */,
+				3A1862FC2252A5CA005DD92C /* KeyboardExtension.swift */,
 				3A8B2E5622554CC9003AC664 /* Alert.swift */,
+				3A98A66622EC96D800241AB3 /* Help.swift */,
+				3A98A66822ECB05300241AB3 /* UIColorExtension.swift */,
+				3A0AC0FB22EE5765000B231C /* CurrencyExtension.swift */,
+				3A0AC0FD22EE717B000B231C /* StringExtension.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -157,10 +202,11 @@
 		3A970433222705C800B05E37 /* TrocAuto */ = {
 			isa = PBXGroup;
 			children = (
+				3A0A578122EB93310017F172 /* Compare */,
 				3A97046722270B0000B05E37 /* AutoList */,
 				3A97046422270AE600B05E37 /* Charts */,
 				3A1862FB2252A599005DD92C /* Components */,
-				3AD3F689225B78270035F386 /* Assets */,
+				3A98A67D22ED3B4500241AB3 /* Resources */,
 				3A970434222705C800B05E37 /* AppDelegate.swift */,
 				3A97043A222705C800B05E37 /* Main.storyboard */,
 				3A97043D222705CA00B05E37 /* Assets.xcassets */,
@@ -241,9 +287,37 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3A98A66A22ED34B000241AB3 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3A6012F522EDF46C00231742 /* Background-launch-title.jpg */,
+				3A98A67922ED391100241AB3 /* Background-launch.jpg */,
+				3A98A66B22ED350C00241AB3 /* Trocauto.jpg */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		3A98A67D22ED3B4500241AB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A98A67E22ED3B5C00241AB3 /* Fonts */,
+				3AD3F689225B78270035F386 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3A98A67E22ED3B5C00241AB3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3A98A67F22ED3BA200241AB3 /* BlackOpsOne-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		3AD3F689225B78270035F386 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				3A98A66A22ED34B000241AB3 /* Screen */,
 				3AD3F690225B78500035F386 /* Icons */,
 				3AD3F691225B7BF00035F386 /* TabBar */,
 			);
@@ -263,6 +337,9 @@
 		3AD3F691225B7BF00035F386 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				3A98A67322ED37C000241AB3 /* vehicles.png */,
+				3A98A67522ED37C000241AB3 /* chart.png */,
+				3A98A67422ED37C000241AB3 /* 1x1.png */,
 				3AD3F692225B7CCD0035F386 /* icons8-chart-25.png */,
 				3AD3F693225B7CCD0035F386 /* icons8-fiat-500-25.png */,
 			);
@@ -406,10 +483,17 @@
 				3AD3F68E225B78490035F386 /* icons8-checked-60.png in Resources */,
 				3AD3F68F225B78490035F386 /* icons8-back-to-60.png in Resources */,
 				3A970441222705CA00B05E37 /* LaunchScreen.storyboard in Resources */,
+				3A98A66C22ED350C00241AB3 /* Trocauto.jpg in Resources */,
 				3AD3F694225B7CCD0035F386 /* icons8-chart-25.png in Resources */,
 				3AD3F695225B7CCD0035F386 /* icons8-fiat-500-25.png in Resources */,
 				3AD3F68D225B78490035F386 /* icons8-plus-60.png in Resources */,
+				3A98A67A22ED391100241AB3 /* Background-launch.jpg in Resources */,
+				3A98A67622ED37C000241AB3 /* vehicles.png in Resources */,
 				3A97043E222705CA00B05E37 /* Assets.xcassets in Resources */,
+				3A98A67722ED37C000241AB3 /* 1x1.png in Resources */,
+				3A98A68022ED3D6C00241AB3 /* BlackOpsOne-Regular.ttf in Resources */,
+				3A6012F622EDF46C00231742 /* Background-launch-title.jpg in Resources */,
+				3A98A67822ED37C000241AB3 /* chart.png in Resources */,
 				3A97043C222705C800B05E37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,14 +612,19 @@
 			files = (
 				3A970439222705C800B05E37 /* AutoListViewController.swift in Sources */,
 				3AABA5292228376700A39E76 /* AddAutoViewController.swift in Sources */,
+				3A0AC0FE22EE717B000B231C /* StringExtension.swift in Sources */,
+				3A98A66722EC96D800241AB3 /* Help.swift in Sources */,
 				3A970435222705C800B05E37 /* AppDelegate.swift in Sources */,
-				3A1862FD2252A5CA005DD92C /* DoneExtension.swift in Sources */,
+				3A1862FD2252A5CA005DD92C /* KeyboardExtension.swift in Sources */,
 				3AD085D8222734BD0090B68E /* TrocAuto.xcdatamodeld in Sources */,
+				3A0AC0FC22EE5765000B231C /* CurrencyExtension.swift in Sources */,
+				3A98A66922ECB05300241AB3 /* UIColorExtension.swift in Sources */,
 				3AABA52B2228463D00A39E76 /* Vehicle.swift in Sources */,
 				3A8B2E5722554CC9003AC664 /* Alert.swift in Sources */,
 				3AABA5262228373800A39E76 /* AutoListCell.swift in Sources */,
 				3A970437222705C800B05E37 /* ChartViewController.swift in Sources */,
 				3A7C7D8E2228C4D30056BB08 /* VehicleDAO.swift in Sources */,
+				3A0A578422EB939F0017F172 /* CompareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -877,9 +966,10 @@
 		3AD085D6222734BD0090B68E /* TrocAuto.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				3A98A66522EC8AB400241AB3 /* TrocAuto v2.xcdatamodel */,
 				3AD085D7222734BD0090B68E /* TrocAuto.xcdatamodel */,
 			);
-			currentVersion = 3AD085D7222734BD0090B68E /* TrocAuto.xcdatamodel */;
+			currentVersion = 3A98A66522EC8AB400241AB3 /* TrocAuto v2.xcdatamodel */;
 			path = TrocAuto.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -10,6 +10,8 @@ import UIKit
 
 extension UIViewController {
     
+    // MARK: - Hide Keyboard
+    
     @objc func doneClicked() {
         view.endEditing(true)
     }
@@ -24,4 +26,8 @@ extension UIViewController {
         
         return toolbar
     }
+    
+    // MARK: - Resize view with keyboard
+    
+    
 }

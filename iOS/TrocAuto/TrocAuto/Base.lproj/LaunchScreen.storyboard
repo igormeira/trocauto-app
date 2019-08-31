@@ -18,18 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrocAuto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjo-xa-SAv">
-                                <rect key="frame" x="8" y="255" width="304" height="58.5"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="50"/>
-                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-launch-title.jpg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qv7-vE-cOl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.57647058819999997" green="0.074489658900000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tjo-xa-SAv" secondAttribute="trailing" constant="8" id="4GB-n8-9x0"/>
-                            <constraint firstItem="tjo-xa-SAv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="BPD-4M-pTo"/>
-                            <constraint firstItem="tjo-xa-SAv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aTn-bp-mx5"/>
+                            <constraint firstItem="qv7-vE-cOl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="97H-jc-lsq"/>
+                            <constraint firstItem="qv7-vE-cOl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CeM-Gy-QOD"/>
+                            <constraint firstItem="qv7-vE-cOl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Iay-f3-Z8x"/>
+                            <constraint firstItem="qv7-vE-cOl" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="h9r-M8-HyE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -39,4 +37,7 @@
             <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background-launch-title.jpg" width="1125" height="2437"/>
+    </resources>
 </document>

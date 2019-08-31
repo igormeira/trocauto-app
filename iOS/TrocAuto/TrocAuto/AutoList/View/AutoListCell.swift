@@ -11,20 +11,18 @@ import UIKit
 class AutoListCell: UITableViewCell {
 
     @IBOutlet weak var labelName: UILabel!
-    @IBOutlet weak var labelFuel: UILabel!
     @IBOutlet weak var labelMC: UILabel!
+    @IBOutlet weak var labelPrice: UILabel!
     
     func configAutoCell(auto:Vehicle) {
         let mc = auto.calculateMonthlyCost()
-        var mcStr = String(format:"%.2f", mc)
-        mcStr = mcStr.replacingOccurrences(of: ".", with: ",")
+        let price = auto.initPrice
         
-        var fuelStr = String(format:"%.2f", auto.fuelPrice)
-        fuelStr = fuelStr.replacingOccurrences(of: ".", with: ",")
+        Formatter.currency.locale = .br
         
         labelName.text = auto.name
-        labelMC.text = "Custo mensal: R$ \(mcStr)"
-        labelFuel.text = "Preço do combustível: R$ \(fuelStr)"
+        labelMC.text = "Custo mensal: \(mc.currency)"
+        labelPrice.text = "Valor: \(price.currency)"
     }
 
 }

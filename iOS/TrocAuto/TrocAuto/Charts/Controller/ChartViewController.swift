@@ -18,8 +18,6 @@ class ChartViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet weak var slider: UISlider!
     
     // MARK: - Final Attributes
-    let COLOR_PURPLE = NSUIColor.purple
-    let COLOR_GREEN = NSUIColor.green
     
     // MARK: - Variables
     var autoPicker1 = UIPickerView()
@@ -62,6 +60,7 @@ class ChartViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
 
     //MARK: - Picker
     
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -75,12 +74,17 @@ class ChartViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerView.tag == 1 {
-            fieldAuto1.text = listAuto[row].name
-        } else {
-            fieldAuto2.text = listAuto[row].name
+        if listAuto.count > 1 {
+            if pickerView.tag == 1 {
+                fieldAuto1.text = listAuto[row].name
+            } else {
+                fieldAuto2.text = listAuto[row].name
+            }
+            setChartValues()
         }
-        setChartValues()
+        else {
+            
+        }
     }
     
     //MARK: - Slider
@@ -103,12 +107,12 @@ class ChartViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         if let vehicle1 = VehicleDAO().getVehicleByName(v1) {
             slider.maximumValue = (Int(vehicle1.months) > Int(slider.maximumValue)) ? Float(vehicle1.months) : slider.maximumValue
-            let set1 = getVehicleData(vehicle1, COLOR_PURPLE)
+            let set1 = getVehicleData(vehicle1, UIColor(named: "blueColor") ?? UIColor.blue)
             dataSets.append(set1)
         }
         if let vehicle2 = VehicleDAO().getVehicleByName(v2) {
             slider.maximumValue = (Int(vehicle2.months) > Int(slider.maximumValue)) ? Float(vehicle2.months) : slider.maximumValue
-            let set2 = getVehicleData(vehicle2, COLOR_GREEN)
+            let set2 = getVehicleData(vehicle2, UIColor(named: "redColor") ?? UIColor.red)
             dataSets.append(set2)
         }
         
